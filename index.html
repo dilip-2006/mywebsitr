@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/loadingscreen.css">
     <link rel="stylesheet" href="css/commonstyles.css">
     <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/sections.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -57,35 +56,53 @@
     <main>
         <!-- Home Section -->
         <section id="home" class="active">
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="morph-blob"></div>
+            <div class="hero-blob"></div>
+            <div class="hero-blob"></div>
+            <div class="hero-blob"></div>
+            <div class="hero-particles" id="heroParticles"></div>
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title1">DILIP KUMAR S</h1>
-                    <h2 class="hero-title">Robotics Developer</h2>
-                    <p class="hero-subtitle">Crafting innovative robotics solutions through cutting-edge engineering</p>
-                    <a href="#about" class="btn scroll-link">Discover My Work</a>
+                    <h1 class="hero-title1 animate-fade-in-up">DILIP KUMAR S</h1>
+                    <h2 class="hero-title animate-fade-in-up animate-delay-200">Robotics Developer</h2>
+                    <p class="hero-subtitle animate-fade-in-up animate-delay-300">Crafting innovative robotics solutions through cutting-edge engineering and creative problem-solving</p>
+                    <a href="#about" class="hero-cta scroll-link animate-fade-in-up animate-delay-400">
+                        <span>Discover My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
+            </div>
+            <div class="scroll-indicator animate-fade-in-up animate-delay-500">
+                <span>Scroll to explore</span>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about">
             <div class="container">
-                <h2>About Me</h2>
+                <h2 class="animate-fade-in-up">About Me</h2>
                 <div class="about-content">
-                    <div class="profile-container">
+                    <div class="profile-container animate-fade-in-left animate-delay-200">
                         <img src="js/dkprofile.png" alt="Profile Image" class="profile-img">
                     </div>
-                    <div class="about-text">
+                    <div class="about-text animate-fade-in-right animate-delay-300">
                         <h3>Robotics Developer & Engineer</h3>
                         <p>I'm a passionate robotics developer with experience in designing, building, and programming autonomous robotic systems. My expertise spans across mechanical engineering, embedded systems, computer vision, and artificial intelligence.</p>
-                        <p>My journey began with a fascination for how machines could interact with the physical world, which led me to pursue advanced degrees in robotics engineering. Throughout my career, I've worked on projects ranging from industrial
-                            automation to search and rescue robots.</p>
-                        <p>I believe in creating robotic solutions that are not only technically sophisticated but also intuitive and accessible. My approach combines rigorous engineering principles with creative problem-solving to develop robots that make
-                            a meaningful impact.</p>
-                        <a href="js/ccv.pdf" class="cv-button" target="_blank">View My CV</a>
+                        <p>My journey began with a fascination for how machines could interact with the physical world, which led me to pursue advanced degrees in robotics engineering. Throughout my career, I've worked on projects ranging from industrial automation to search and rescue robots.</p>
+                        <p>I believe in creating robotic solutions that are not only technically sophisticated but also intuitive and accessible. My approach combines rigorous engineering principles with creative problem-solving to develop robots that make a meaningful impact.</p>
+                        <a href="js/ccv.pdf" class="cv-button" target="_blank">
+                            <span>View My CV</span>
+                        </a>
+                        <div class="skills-highlight animate-fade-in-up animate-delay-500">
+                            <h4>Core Expertise</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">ROS/ROS2</span>
+                                <span class="skill-tag">Computer Vision</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Embedded Systems</span>
+                                <span class="skill-tag">SLAM</span>
+                                <span class="skill-tag">Path Planning</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,8 +111,10 @@
         <!-- Projects Section -->
         <section id="projects">
             <div class="container">
-                <h2>Featured Projects</h2>
-                <p>Click for more info!</p>
+                <div class="projects-section-header animate-fade-in-up">
+                    <h2>Featured Projects</h2>
+                    <p>Explore my latest robotics projects and innovations. Click on any project to learn more about the technologies and methodologies used.</p>
+                </div>
                 <div class="projects-grid" id="projectsGrid">
                     <!-- Project cards will be dynamically loaded from projects.js -->
                 </div>
@@ -132,7 +151,6 @@
                         <div class="window-title">Description.docx</div>
                     </div>
                     <div class="window-content project-content">
-
                         <div id="modal-project-description"></div>
                     </div>
                 </div>
@@ -156,7 +174,7 @@
         <!-- Skills Section -->
         <section id="skills">
             <div class="container">
-                <h2>Technical Skills</h2>
+                <h2 class="animate-fade-in-up">Technical Skills</h2>
                 <div class="skills-container" id="skillsContainer">
                     <!-- Skill categories will be dynamically loaded from skills.js -->
                 </div>
@@ -166,7 +184,7 @@
         <!-- Certifications Section -->
         <section id="certifications">
             <div class="container">
-                <h1>Certifications</h1>
+                <h1 class="animate-fade-in-up">Certifications</h1>
                 <div class="certifications-container" id="certificationsContainer">
                     <!-- Certification terminals will be dynamically loaded from certifications.js -->
                 </div>
@@ -186,8 +204,8 @@
         <!-- Experience Section -->
         <section id="experience">
             <div class="container">
-                <h1>Experience</h1>
-                <div class="title-bar">
+                <h1 class="animate-fade-in-up">Experience</h1>
+                <div class="title-bar animate-fade-in-up animate-delay-200">
                     <div class="window-controls">
                         <div class="control red"></div>
                         <div class="control yellow"></div>
@@ -195,7 +213,7 @@
                     </div>
                     <div class="title">RobotJourney.app</div>
                 </div>
-                <div class="content" id="experienceContent">
+                <div class="content animate-fade-in-up animate-delay-300" id="experienceContent">
                     <h3>Use keyboard ↑ (or) → and ↓ (or) ← arrows,</h3>
                     <h3>scroll or click on the checkpoints.</h3>
                     <div class="road"></div>
@@ -207,8 +225,8 @@
         <!-- Research Section -->
         <section id="research">
             <div class="container">
-                <h2>Research Publications</h2>
-                <div id="researchContainer">
+                <h2 class="animate-fade-in-up">Research Publications</h2>
+                <div id="researchContainer" class="animate-fade-in-up animate-delay-200">
                     <!-- Research items will be dynamically loaded from research.js -->
                 </div>
             </div>
@@ -216,34 +234,36 @@
 
         <!-- Gallery Section -->
         <section id="gallery">
-            <h1>Gallery</h1>
-            <div class="mac-window">
-                <div class="window-header">
-                    <div class="window-buttons">
-                        <div class="window-button close-btn"></div>
-                        <div class="window-button minimize-btn"></div>
-                        <div class="window-button maximize-btn"></div>
+            <div class="container">
+                <h1 class="animate-fade-in-up">Gallery</h1>
+                <div class="mac-window animate-scale-in animate-delay-200">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button close-btn"></div>
+                            <div class="window-button minimize-btn"></div>
+                            <div class="window-button maximize-btn"></div>
+                        </div>
+                        <div class="window-title">Gallery.jpeg</div>
                     </div>
-                    <div class="window-title">Gallery.jpeg</div>
-                </div>
 
-                <div class="window-content">
-                    <h1 class="carousel-title">Gallery of my Learning</h1>
+                    <div class="window-content">
+                        <h1 class="carousel-title">Gallery of my Learning</h1>
 
-                    <div class="carousel-wrapper">
-                        <div class="carousel-track" id="carouselTrack">
-                            <!-- Slides will be generated here -->
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="carouselTrack">
+                                <!-- Slides will be generated here -->
+                            </div>
+
+                            <div class="carousel-controls prev" id="prevBtn">‹</div>
+                            <div class="carousel-controls next" id="nextBtn">›</div>
                         </div>
 
-                        <div class="carousel-controls prev" id="prevBtn">‹</div>
-                        <div class="carousel-controls next" id="nextBtn">›</div>
-                    </div>
+                        <div class="carousel-indicators" id="indicators">
+                            <!-- Indicators will be generated here -->
+                        </div>
 
-                    <div class="carousel-indicators" id="indicators">
-                        <!-- Indicators will be generated here -->
+                        <div class="progress-bar" id="progressBar"></div>
                     </div>
-
-                    <div class="progress-bar" id="progressBar"></div>
                 </div>
             </div>
         </section>
@@ -251,8 +271,8 @@
         <!-- Contact Section -->
         <section id="contact">
             <div class="container">
-                <h2>Contact Me</h2>
-                <div class="mac-window research-item">
+                <h2 class="animate-fade-in-up">Contact Me</h2>
+                <div class="mac-window research-item animate-scale-in animate-delay-200">
                     <div class="window-header">
                         <div class="window-buttons">
                             <div class="window-button close-btn"></div>
@@ -261,15 +281,13 @@
                         </div>
                         <div class="window-title">contact.msg</div>
                     </div>
-                    <h3> </h3>
                     <div class="contact-content">
-                        <div class="contact-info">
+                        <div class="contact-info animate-fade-in-left animate-delay-300">
                             <div class="contact-item">
                                 <div class="contact-icon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div>
-                                    <h3> </h3>
                                     <h3>Location</h3>
                                     <p>Chennai, India.</p>
                                 </div>
@@ -279,7 +297,6 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div>
-                                    <h3> </h3>
                                     <h3>Email</h3>
                                     <p>letsmaildilip@gmail.com</p>
                                 </div>
@@ -289,20 +306,19 @@
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div>
-                                    <h3> </h3>
                                     <h3>Phone</h3>
                                     <p>+91 93619 23327</p>
                                 </div>
                             </div>
                             <div class="contact-links">
-                                <a href="https://www.linkedin.com/in/dilipkumar-963b27294" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://github.com/dilip-2006/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                                <a href="mailto:letsmaildilip@gmail.com?subject=Website%20Inquiry&body=Hello%20Dilip%2C%0A%0AI%20visited%20your%20website%20and%20would%20like%20to%20discuss..." target="_blank" class="social-link"><i class="fas fa-envelope"></i></a>
+                                <a href="https://www.linkedin.com/in/dilipkumar-963b27294" target="_blank" class="social-link hover-glow"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/dilip-2006/" target="_blank" class="social-link hover-glow"><i class="fab fa-github"></i></a>
+                                <a href="mailto:letsmaildilip@gmail.com?subject=Website%20Inquiry&body=Hello%20Dilip%2C%0A%0AI%20visited%20your%20website%20and%20would%20like%20to%20discuss..." target="_blank" class="social-link hover-glow"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
 
                         <!-- Updated Form with Web3Forms Integration -->
-                        <form class="contact-form" method="POST">
+                        <form class="contact-form animate-fade-in-right animate-delay-400" method="POST">
                             <!-- Web3Forms access key -->
                             <input type="hidden" name="access_key" value="af235d65-185a-473a-b76f-cac276cdaac2">
 
@@ -321,7 +337,7 @@
                             <div class="form-group">
                                 <textarea name="message" class="form-control" placeholder="Message" required></textarea>
                             </div>
-                            <button type="submit" class="btn submit-btn">Send Message</button>
+                            <button type="submit" class="btn submit-btn hover-glow">Send Message</button>
                             <div class="form-message"></div>
                         </form>
                     </div>
