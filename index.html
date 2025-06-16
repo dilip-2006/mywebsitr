@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilip Kumar S - Robotics Developer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="js/dkprof.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sectiontransition.css">
+    <link rel="stylesheet" href="css/loadingscreen.css">
+    <link rel="stylesheet" href="css/commonstyles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cv.css">
+    <link rel="stylesheet" href="css/certificatessection.css">
+    <link rel="stylesheet" href="css/contactsection.css">
+    <link rel="stylesheet" href="css/skillssection.css">
+    <link rel="stylesheet" href="css/gallerysection.css">
+    <link rel="stylesheet" href="css/experiencesection.css">
+    <link rel="stylesheet" href="css/projectsection.css">
+    <link rel="stylesheet" href="css/reasearchsection.css">
+    <link rel="stylesheet" href="css/aboutsection.css">
+    <link rel="stylesheet" href="css/homesections.css">
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loadingScreen">
+        <div class="hello-container">
+            <div class="hello" style="opacity: 0;">வணக்கம்</div>
+            <div class="hello" style="opacity: 0;">Hello</div>
+            <div class="hello" style="opacity: 0;">नमस्ते</div>
+            <div class="hello" style="opacity: 0;">Bonjour</div>
+            <div class="hello" style="opacity: 0;">Hola</div>
+            <div class="hello" style="opacity: 0;">你好</div>
+            <div class="hello" style="opacity: 0;">こんにちは</div>
+            <div class="hello" style="opacity: 0;">Olá</div>
+            <div class="hello" style="opacity: 0;">مرحبا</div>
+            <div class="hello" style="opacity: 0;">Привет</div>
+        </div>
+    </div>
+
+    <!-- Section Transition -->
+    <div class="section-transition">
+        <i class="section-transition-icon fas fa-robot"></i>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="morph-blob"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title1">DILIP KUMAR S</h1>
+                    <h2 class="hero-title">Robotics Developer</h2>
+                    <p class="hero-subtitle">Crafting innovative robotics solutions through cutting-edge engineering</p>
+                    <a href="#about" class="btn scroll-link">Discover My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="profile-container">
+                        <img src="js/dkprofile.png" alt="Profile Image" class="profile-img">
+                    </div>
+                    <div class="about-text">
+                        <h3>Robotics Developer & Engineer</h3>
+                        <p>I'm a passionate robotics developer with experience in designing, building, and programming autonomous robotic systems. My expertise spans across mechanical engineering, embedded systems, computer vision, and artificial intelligence.</p>
+                        <p>My journey began with a fascination for how machines could interact with the physical world, which led me to pursue advanced degrees in robotics engineering. Throughout my career, I've worked on projects ranging from industrial
+                            automation to search and rescue robots.</p>
+                        <p>I believe in creating robotic solutions that are not only technically sophisticated but also intuitive and accessible. My approach combines rigorous engineering principles with creative problem-solving to develop robots that make
+                            a meaningful impact.</p>
+                        <a href="js/ccv.pdf" class="cv-button" target="_blank">View My CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <p>Click for more info!</p>
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Project cards will be dynamically loaded from projects.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modal -->
+        <div class="project-modal" id="project-modal">
+            <div class="modal-content">
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+                <h2 id="modal-project-title"></h2>
+                <div class="mac-window project-card">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button close-btn"></div>
+                            <div class="window-button minimize-btn"></div>
+                            <div class="window-button maximize-btn"></div>
+                        </div>
+                        <div class="window-title">visual.jpeg</div>
+                    </div>
+                    <div class="window-content project-content">
+                        <div class="modal-images">
+                            <!-- Images will be dynamically loaded -->
+                        </div>
+                    </div>
+                </div>
+                <div class="mac-window project-card">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button close-btn"></div>
+                            <div class="window-button minimize-btn"></div>
+                            <div class="window-button maximize-btn"></div>
+                        </div>
+                        <div class="window-title">Description.docx</div>
+                    </div>
+                    <div class="window-content project-content">
+
+                        <div id="modal-project-description"></div>
+                    </div>
+                </div>
+                <div class="mac-window project-card">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button close-btn"></div>
+                            <div class="window-button minimize-btn"></div>
+                            <div class="window-button maximize-btn"></div>
+                        </div>
+                        <div class="window-title">tech.xml</div>
+                    </div>
+                    <div class="window-content project-content">
+                        <div id="modal-project-tech"></div>
+                    </div>
+                </div>
+                <div id="modal-project-links"></div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skills-container" id="skillsContainer">
+                    <!-- Skill categories will be dynamically loaded from skills.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <div class="container">
+                <h1>Certifications</h1>
+                <div class="certifications-container" id="certificationsContainer">
+                    <!-- Certification terminals will be dynamically loaded from certifications.js -->
+                </div>
+
+                <!-- Certificate Modal -->
+                <div class="modal-overlay" id="certificateModal">
+                    <div class="certificate-modal">
+                        <div class="modal-header">
+                            <h2>Certificate Viewer</h2>
+                            <button class="close-button" onclick="closeModal()">&times;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h1>Experience</h1>
+                <div class="title-bar">
+                    <div class="window-controls">
+                        <div class="control red"></div>
+                        <div class="control yellow"></div>
+                        <div class="control green"></div>
+                    </div>
+                    <div class="title">RobotJourney.app</div>
+                </div>
+                <div class="content" id="experienceContent">
+                    <h3>Use keyboard ↑ (or) → and ↓ (or) ← arrows,</h3>
+                    <h3>scroll or click on the checkpoints.</h3>
+                    <div class="road"></div>
+                    <!-- Robot and experience content will be loaded from experience.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research">
+            <div class="container">
+                <h2>Research Publications</h2>
+                <div id="researchContainer">
+                    <!-- Research items will be dynamically loaded from research.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <div class="mac-window">
+                <div class="window-header">
+                    <div class="window-buttons">
+                        <div class="window-button close-btn"></div>
+                        <div class="window-button minimize-btn"></div>
+                        <div class="window-button maximize-btn"></div>
+                    </div>
+                    <div class="window-title">Gallery.jpeg</div>
+                </div>
+
+                <div class="window-content">
+                    <h1 class="carousel-title">Gallery of my Learning</h1>
+
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Slides will be generated here -->
+                        </div>
+
+                        <div class="carousel-controls prev" id="prevBtn">‹</div>
+                        <div class="carousel-controls next" id="nextBtn">›</div>
+                    </div>
+
+                    <div class="carousel-indicators" id="indicators">
+                        <!-- Indicators will be generated here -->
+                    </div>
+
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="mac-window research-item">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button close-btn"></div>
+                            <div class="window-button minimize-btn"></div>
+                            <div class="window-button maximize-btn"></div>
+                        </div>
+                        <div class="window-title">contact.msg</div>
+                    </div>
+                    <h3> </h3>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h3> </h3>
+                                    <h3>Location</h3>
+                                    <p>Chennai, India.</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h3> </h3>
+                                    <h3>Email</h3>
+                                    <p>letsmaildilip@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h3> </h3>
+                                    <h3>Phone</h3>
+                                    <p>+91 93619 23327</p>
+                                </div>
+                            </div>
+                            <div class="contact-links">
+                                <a href="https://www.linkedin.com/in/dilipkumar-963b27294" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/dilip-2006/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="mailto:letsmaildilip@gmail.com?subject=Website%20Inquiry&body=Hello%20Dilip%2C%0A%0AI%20visited%20your%20website%20and%20would%20like%20to%20discuss..." target="_blank" class="social-link"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Updated Form with Web3Forms Integration -->
+                        <form class="contact-form" method="POST">
+                            <!-- Web3Forms access key -->
+                            <input type="hidden" name="access_key" value="af235d65-185a-473a-b76f-cac276cdaac2">
+
+                            <!-- Honeypot field for spam protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn submit-btn">Send Message</button>
+                            <div class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Navigation Dock -->
+    <div class="dock-container">
+        <div class="section-display" id="sectionDisplay">Home</div>
+        <div class="dock" id="dock">
+            <a href="#home" class="dock-item active" data-tooltip="Home">
+                <i class="fas fa-home"></i>
+                <div class="tooltip">Home</div>
+                <div class="running-indicator"></div>
+            </a>
+            <a href="#about" class="dock-item" data-tooltip="About">
+                <i class="fas fa-user"></i>
+                <div class="tooltip">About</div>
+            </a>
+            <a href="#projects" class="dock-item" data-tooltip="Projects">
+                <i class="fas fa-project-diagram"></i>
+                <div class="tooltip">Projects</div>
+            </a>
+            <a href="#skills" class="dock-item" data-tooltip="Skills">
+                <i class="fas fa-cogs"></i>
+                <div class="tooltip">Skills</div>
+            </a>
+            <a href="#certifications" class="dock-item" data-tooltip="Certifications">
+                <i class="fas fa-certificate"></i>
+                <div class="tooltip">Certifications</div>
+            </a>
+            <a href="#experience" class="dock-item" data-tooltip="Experience">
+                <i class="fas fa-briefcase"></i>
+                <div class="tooltip">Experience</div>
+            </a>
+            <a href="#research" class="dock-item" data-tooltip="Research">
+                <i class="fas fa-flask"></i>
+                <div class="tooltip">Research</div>
+            </a>
+            <a href="#gallery" class="dock-item" data-tooltip="Gallery">
+                <i class="fas fa-images"></i>
+                <div class="tooltip">Gallery</div>
+            </a>
+            <a href="#contact" class="dock-item" data-tooltip="Contact">
+                <i class="fas fa-envelope"></i>
+                <div class="tooltip">Contact</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/loader.js"></script>
+    <script src="js/dock.js"></script>
+    <script src="js/skillsdata.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/certifications.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/research.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/projectdata.js"></script>
+    <script src="js/certificationdata.js"></script>
+    <script src="js/experiencedata.js"></script>
+    <script src="js/researchdata.js"></script>
+    <script src="js/gallerydata.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

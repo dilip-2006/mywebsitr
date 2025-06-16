@@ -1,0 +1,21 @@
+/* CV Button */
+
+.cv-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #4273e6, #393cfa);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.cv-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(71, 118, 230, 0.4);
+}

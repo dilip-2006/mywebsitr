@@ -1,0 +1,34 @@
+/* About Section */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+}
+
+.profile-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.about-text h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}

@@ -1,0 +1,36 @@
+/* Blob Effects */
+
+.blob {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, #0071e3, #64d2ff);
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    animation: blob-animation 20s infinite alternate;
+}
+
+.blob:nth-child(1) {
+    top: -150px;
+    left: -150px;
+}
+
+.blob:nth-child(2) {
+    bottom: -150px;
+    right: -150px;
+    animation-delay: 5s;
+}
+
+.morph-blob {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, #0071e3, #64d2ff);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    filter: blur(10px);
+    opacity: 0.1;
+    animation: morph 8s ease-in-out infinite;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}

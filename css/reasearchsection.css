@@ -1,0 +1,18 @@
+/* Research Section */
+
+.research-item {
+    margin-bottom: 3rem;
+    transition: transform 0.3s;
+}
+
+.research-item:hover {
+    transform: translateY(-5px);
+}
+
+.research-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
